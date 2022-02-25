@@ -3,22 +3,36 @@
 
 <head>
     <meta charset="utf-8">
+    <title> JavaScript Practice</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
 
 <body>
 
     <h1> Testing js</h1>
 
-    <p id='j'> When you click the button it will change the phrase!</p>
+    <p id='a'> When you click the button it will change the phrase!</p>
 
     <button type="button" onclick="mycarName()">clik</button>
+
+    <p id='b'>Click me to know how much is 1e7</p>
+
+    <button type='button' onclick='result()'>enotation</button>
+
+
 </body>
 
 <script>
     function mycarName() {
 
-        var d = document.getElementById('j').innerHTML = "You have just click me thank you! ";
+        var d = document.getElementById('a').innerHTML = "You have just click me thank you! "
 
+    }
 
+    function result() {
+
+        document.getElementById('b').innerHTML = 1e7 + "  million";
 
     }
 
